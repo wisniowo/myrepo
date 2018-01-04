@@ -1,0 +1,9 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<div th:fragment="shoppingCartUser">
+	<span th:text="${user.name}"></span>
+	<a href="remove.html" th:href="@{/users/cart-remove/{userName}(userName=${user.name})}">remove</a>
+</div>
+
+</html>
